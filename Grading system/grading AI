@@ -1,0 +1,36 @@
+subjects = []
+marks = []
+
+print("Enter number of subjects:")
+num_subjects = int(input())
+for i in range(num_subjects):
+    sub_name = input(f"Enter subject #{i+1} name: ")
+    mark = float(input(f"Enter marks for {sub_name} (0-100): "))
+    subjects.append(sub_name)
+    marks.append(mark)
+
+total = sum(marks)
+average = total / num_subjects
+percentage = (total / (num_subjects * 100)) * 100
+
+if average >= 90:
+    grade = 'A'
+elif average >= 80:
+    grade = 'B'
+elif average >= 70:
+    grade = 'C'
+elif average >= 60:
+    grade = 'D'
+else:
+    grade = 'F'
+
+passed = all(mark >= 40 for mark in marks)
+
+print("\n----- Result -----")
+for sub, mark in zip(subjects, marks):
+    print(f"{sub}: {mark}/100")
+print(f"Total Marks: {total}/{num_subjects*100}")
+print(f"Average Marks: {average:.2f}")
+print(f"Percentage: {percentage:.2f}%")
+print(f"Grade: {grade}")
+print(f"Status: {'Passed' if passed else 'Failed'}")
