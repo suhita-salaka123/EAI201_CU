@@ -1,0 +1,38 @@
+Enter number of subjects:
+ 3
+Enter subject #1 name:  maths
+Enter marks for maths (0-100):  90
+Enter subject #2 name:  scince
+Enter marks for scince (0-100):  40
+Enter subject #3 name:  ai
+Enter marks for ai (0-100):  60
+
+----- Result -----
+maths: 90.0/100
+scince: 40.0/100
+ai: 60.0/100
+Total Marks: 190.0/300
+Average Marks: 63.33
+Percentage: 63.33%
+Grade: D
+Status: Passed
+
+
+Enter number of subjects:
+ 3
+Enter subject #1 name:  maths
+Enter marks for maths (0-100):  50
+Enter subject #2 name:  science
+Enter marks for science (0-100):  70
+Enter subject #3 name:  ai
+Enter marks for ai (0-100):  60
+
+----- Result -----
+maths: 50.0/100
+science: 70.0/100
+ai: 60.0/100
+Total Marks: 180.0/300
+Average Marks: 60.00
+Percentage: 60.00%
+Grade: D
+Status: Passed
